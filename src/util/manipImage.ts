@@ -1,5 +1,5 @@
 import { MediaDownloadResult, MediaManipResult } from "../types/media";
-import * as sharp from 'sharp'
+import sharp from 'sharp'
 
 import env from '../util/env'
 
