@@ -2,10 +2,12 @@
   "name": "mastodon-post-to-twitter",
   "version": "0.1.0",
   "description": "Automatically post Mastodon post previews to Twitter with watermarking support",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "build": "npx tsc",
+    "pm2-start": "pm2 start --name mastodon-post-to-twitter dist/index.js"
   },
   "keywords": [
     "mastodon",
@@ -20,6 +22,7 @@
     "file-type": "^16.5.3",
     "image-size": "^1.0.2",
     "megalodon": "^5.0.1",
+    "pm2": "^5.2.2",
     "sharp": "^0.31.2",
     "string-strip-html": "^13.0.2",
     "ts-node": "^10.9.1",
