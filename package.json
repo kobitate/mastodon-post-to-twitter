@@ -1,0 +1,32 @@
+{
+  "name": "mastodon-post-to-twitter",
+  "version": "0.1.0",
+  "description": "Automatically post Mastodon post previews to Twitter with watermarking support",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "mastodon",
+    "twitter"
+  ],
+  "author": "KaiTiggy <hi@kaitiggy.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.2.1",
+    "blurhash": "^2.0.4",
+    "dotenv": "^16.0.3",
+    "file-type": "^16.5.3",
+    "image-size": "^1.0.2",
+    "megalodon": "^5.0.1",
+    "sharp": "^0.31.2",
+    "string-strip-html": "^13.0.2",
+    "ts-node": "^10.9.1",
+    "twitter-api-v2": "^1.12.9"
+  },
+  "devDependencies": {
+    "@types/sharp": "^0.31.0",
+    "typescript": "^4.9.4"
+  }
+}
